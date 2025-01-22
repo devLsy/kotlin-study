@@ -16,4 +16,9 @@ class Person(val name : String, val age : Int) {
 
 class Car(val brand : String, val year : Int) {
     var color : String  = "white"
+
+    //보조 생성자
+    constructor(brand: String, year: Int, color: String) : this(brand, year) {
+
+    }
 }
